@@ -1,0 +1,14 @@
+---- PROD_RES 匹配 (13 in 2 文件) ----
+Config.h (e:\t\p160524-purist pro 20160926 test\source\app):    UINT32 PROD_RES[2];   // 水质设定： 0~18.2MΩ.cm  (1 decimal)
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):    Disp_Int2floatFormat(Display.cfg.cfg2.PROD_RES[chl],1,1,buf);
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):        if (Display.cfg.cfg2.PROD_RES[chl] > 0)
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):            Display.cfg.cfg2.PROD_RES[chl]--;
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):        if (Display.cfg.cfg2.PROD_RES[chl] < 182)
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):            Display.cfg.cfg2.PROD_RES[chl]++;
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):	   	    Display.cfg.cfg2.PROD_RES[chl]++;
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):            if (INVALID_CONFIG_VALUE_LONG == Display.cfg.cfg2.PROD_RES[iChl])
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):                Display.cfg.cfg2.PROD_RES[0] = 150; // DECIMAL 15.0
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):                Display.cfg.cfg2.PROD_RES[1] = 500; // DECIMAL 50.0
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):                        if ((Display.iConductivity[DISPLAY_SENSOR_1]/100) <= Display.cfg.cfg2.PROD_RES[0])
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):                            //if ((Display.iConductivity[DISPLAY_SENSOR_2]/100) <= Display.cfg.cfg2.PROD_RES[0])
+Display.c (e:\t\p160524-purist pro 20160926 test\source\app):                            if ((Display.iConductivity[DISPLAY_SENSOR_2]/100) > Display.cfg.cfg2.PROD_RES[1]) //???????è±¨?ˉì??t
